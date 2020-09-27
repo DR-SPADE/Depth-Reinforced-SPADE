@@ -35,10 +35,6 @@ New models can be trained with the following commands.
 2. Train.
 
 ```bash
-# To train on the Facades or COCO dataset, for example.
-python train.py --name [experiment_name] --dataset_mode facades --dataroot [path_to_facades_dataset]
-python train.py --name [experiment_name] --dataset_mode coco --dataroot [path_to_coco_dataset]
-
 # To train on your own custom dataset
 python train.py --name [experiment_name] --dataset_mode custom --label_dir [path_to_labels] -- image_dir [path_to_images] --label_nc [num_labels]
 ```
