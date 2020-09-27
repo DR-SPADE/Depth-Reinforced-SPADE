@@ -36,7 +36,7 @@ New models can be trained with the following commands.
 
 ```bash
 # To train on your own custom dataset
-python train.py --name [experiment_name] --dataset_mode custom --label_dir [path_to_labels] -- image_dir [path_to_images] --label_nc [num_labels]
+python train.py --name [experiment_name] --dataset_mode custom --label_dir [path_to_labels] -- color_dir [path_to_rgb_images] --surface_dir [path_to_depth_images] --input_dir [path_to_input_images] --label_nc [num_labels]
 ```
 
 There are many options you can specify. Please use `python train.py --help`. The specified options are printed to the console. To specify the number of GPUs to utilize, use `--gpu_ids`. If you want to use the second and third GPUs for example, use `--gpu_ids 1,2`.
